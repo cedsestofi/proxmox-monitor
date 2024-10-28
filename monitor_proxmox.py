@@ -18,7 +18,6 @@ CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL")) # Tempo tra i controlli (in se
 STORAGE_USAGE_THRESHOLD = int(os.getenv("CHECK_THRESHOLD"))
 
 # Configura il topic per ntfy.sh
-#NTFY_TOPIC = "Sesto_251024_proxmox"
 NTFY_TOPIC = os.getenv("NTFY_TOPIC")
 
 # Notifica via Telegram
