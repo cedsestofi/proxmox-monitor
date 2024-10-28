@@ -1,0 +1,4 @@
+# requirements.txt per monitor_proxmox.py
+requests
+proxmoxer
+urllib3
