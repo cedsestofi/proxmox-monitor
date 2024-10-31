@@ -20,20 +20,11 @@ STORAGE_USAGE_THRESHOLD = int(os.getenv("CHECK_THRESHOLD"))
 # Configura il topic per ntfy.sh
 NTFY_TOPIC = os.getenv("NTFY_TOPIC")
 
-# Notifica via Telegram
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
-
 headers = {
     "Authorization": f"PVEAPIToken={PROXMOX_USER}!{PROXMOX_TOKEN_NAME}={PROXMOX_TOKEN_VALUE}"
 }
 
 verify_ssl = False  # Cambia a True se il certificato SSL è valido
-
-def send_telegram_message(message):
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message}
-    requests.post(url, json=payloadi)
 
 def send_ntfy_message(message):
     url = f"https://ntfy.sh/{NTFY_TOPIC}"

@@ -1,8 +1,6 @@
 # questo file deve essere compilato con i valori necessari e rinominato in .env
 # .env file per configurare le variabili d'ambiente necessarie per monitor_proxmox.py
 
-TELEGRAM_TOKEN=myTelegramToken # non più in uso a favore di ntfy.sh
-TELEGRAM_CHAT_ID=myTelegramChatId # non più in uso a favore di ntfy.sh
 PROXMOX_USER=myProxmoxUser@pve # nome dell'utente a cui è associato il token
 PROXMOX_TOKEN_NAME=myProxmoxTokenName # nome tel token creato su proxmox
 PROXMOX_TOKEN_VALUE=myProxmoxTokenValue # valore del token creato su proxmox
